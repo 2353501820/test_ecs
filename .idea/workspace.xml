@@ -19,6 +19,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
@@ -34,16 +35,33 @@
       <option name="presentableId" value="Default" />
       <updated>1611666839221</updated>
       <workItem from="1611666841223" duration="1575000" />
+      <workItem from="1611670442333" duration="489000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次项目上传">
+      <created>1611670628377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611670628377</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次项目上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次项目上传" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="94" key="CommitChangelistDialog2" timestamp="1611667068727">
+    <state x="558" y="94" key="CommitChangelistDialog2" timestamp="1611670624136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1611667068727" />
+    <state x="558" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1611670624136" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611670634077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611670634077" />
   </component>
 </project>
