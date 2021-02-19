@@ -21,7 +21,7 @@ class HttpRequest:
 				data = json.loads(data)
 			except Exception as e:
 				# print(e)
-				do_log.error("将json转换为Python数据类型时出现异常，异常为{}".format(e))
+				do_log.info("将json转换为Python数据类型时出现异常，异常为{}".format(e))
 				data=eval(data)
 		if method == "get":
 			res = self.one_session.request(method=method,url=url,params=data,**kwargs)

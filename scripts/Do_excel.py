@@ -36,7 +36,7 @@ class HandleExcel(object):   # 如果你希望其他的实例方法可以调用�
 		获取所有的测试用例
 		:return:存放test命名元组的列表
 		"""
-		for data in self.ws.iter_rows(min_row=2,max_row=5,values_only=True):
+		for data in self.ws.iter_rows(min_row=2,values_only=True):
 			self.test_list.append(self.test(*data))
 		return self.test_list
 
@@ -68,7 +68,7 @@ class HandleExcel(object):   # 如果你希望其他的实例方法可以调用�
 			self.ws.cell(row=row, column=do_config("excel", "result_col"), value=result)
 			self.wb.save(self.filename)
 
-do_excel = HandleExcel(filename=do_config("file path","test_path"))
+# do_excel = HandleExcel(filename=do_config("file path","test_path"))
 
 
 if __name__ == '__main__':

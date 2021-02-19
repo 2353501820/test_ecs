@@ -106,7 +106,7 @@ class Handleconfig(ConfigParser):
 			config.write(file)
 
 
-do_config = Handleconfig()   #创建一个对象方便别的地方调用
+do_config = Handleconfig(CONFIG_FILE_PATH)   #创建一个对象方便别的地方调用
 
 
 if __name__ == '__main__':
@@ -117,5 +117,5 @@ if __name__ == '__main__':
 	# print(config("excel","one_res",is_bool=True))
 	# print(config("excel", "two_res",is_eval=True))
 	# print(config("excel", "three_res",is_bool=True))
-	print(one_config("file path","test_path"))
+	print(one_config("login","url"))
 

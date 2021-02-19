@@ -6,10 +6,11 @@
 # 处理上下文的参数化
 import re
 from scripts.Handle_mysql_encapsulation import HandleMysql
-from scripts.Do_config import do_config
+# from scripts.Do_config import do_config
 from scripts.constants import USER_ACCOUNT_FILE_PATH
+from scripts.Do_config import Handleconfig
 # from cases.test_05_invest import LOAN_ID   # 导入模块的时候，如果有多次导入相同的模块，那么只有第一次导入有效
-
+do_config = Handleconfig(USER_ACCOUNT_FILE_PATH)
 
 class Context:
 	"""
@@ -20,7 +21,7 @@ class Context:
 	recharge_user_pwd_pattern = re.compile(r"\$\{invest_user_pwd\}")
 	loan_id_pattern = re.compile(r"\$\{loan_id\}")
 	not_existed_loan_id_pattern = re.compile(r"\$\{not_existed_loan_id\}")
-	invest_tel_config = do_config(USER_ACCOUNT_FILE_PATH)
+	invest_tel_config = do_config('invest_user','id')
 
 	@classmethod
 	def not_existed_tel_replace(cls,data):
