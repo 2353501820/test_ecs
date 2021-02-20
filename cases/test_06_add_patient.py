@@ -36,3 +36,23 @@ class TestAddPatient:
 	def tearDownClass(cls):
 		cls.sent_request.close()
 		do_log.info("\n{:=^40s}".format("新增患者功能用例执行结束"))
+
+	@data(*all_tests)
+	def test_add_patient(self,data_namedtuple):
+		do_log.info("\nrunning test method:{}".format(inspect.stack()[0][3]))
+		data = data_namedtuple.data
+		id = data_namedtuple.id
+		method = data_namedtuple.method
+		title = data_namedtuple.title
+		url = do_config("login", "url") + data_namedtuple.url
+		result = self.sent_request(method=method, url=url, data=data)
+		if id == 1:
+			self.assertEqual(result.status_code, data_namedtuple.expected, msg="{}期望值与实际值不一致".format(title))
+		elif id == 2:
+			self.assertEqual(result.status_code, data_namedtuple.expected, msg="{}期望值与实际值不一致".format(title))
+		else:
+			self.assertEqual(result.json()["message"], data_namedtuple.expected, msg="{}期望值与实际值不一致".format(title))
+
+
+if __name__ == '__main__':
+	unittest.main()

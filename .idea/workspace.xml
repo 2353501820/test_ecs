@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35a2bf0-26d2-4826-8ec5-5a2b08abb8d7" name="Default Changelist" comment="" />
+    <list default="true" id="e35a2bf0-26d2-4826-8ec5-5a2b08abb8d7" name="Default Changelist" comment="测试用例上传">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test_ecs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test_ecs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_06_add_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_06_add_patient.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +45,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -36,6 +59,8 @@
       <updated>1611666839221</updated>
       <workItem from="1611666841223" duration="1575000" />
       <workItem from="1611670442333" duration="489000" />
+      <workItem from="1611713016003" duration="2843000" />
+      <workItem from="1613802311783" duration="2421000" />
     </task>
     <task id="LOCAL-00001" summary="第一次项目上传">
       <created>1611670628377</created>
@@ -44,24 +69,52 @@
       <option name="project" value="LOCAL" />
       <updated>1611670628377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试用例上传">
+      <created>1611715030948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611715030948</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次项目上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次项目上传" />
+    <MESSAGE value="测试用例上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试用例上传" />
   </component>
   <component name="WindowStateProjectService">
     <state x="558" y="94" key="CommitChangelistDialog2" timestamp="1611670624136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1611670624136" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611670634077">
+    <state x="461" y="151" key="SettingsEditor" timestamp="1611716863315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611670634077" />
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611716863315" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611715040087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611715040087" />
+    <state x="753" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613802471954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613802471954" />
   </component>
 </project>
