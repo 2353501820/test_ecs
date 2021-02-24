@@ -3,11 +3,11 @@
 # file: test_06_add_patient.py
 # author:gaobo
 # time:2021/02/19
+import os
 import unittest
-from libs.ddt import ddt,data
+from libs.ddt import ddt, data
 import inspect
 import json
-import os
 from scripts.Handle_request import HttpRequest
 from scripts.Do_excel import HandleExcel
 from scripts.Do_config import do_config
@@ -21,7 +21,7 @@ add_patient_path = os.path.join(constants.DATAS_DIR,"add_patient.xlsx")
 do_excel = HandleExcel(add_patient_path)
 
 @ddt
-class TestAddPatient:
+class TestAddPatient(unittest.TestCase):
 	"""
 	测试新增患者测试用例
 	"""
@@ -34,13 +34,13 @@ class TestAddPatient:
 
 	@classmethod
 	def tearDownClass(cls):
-		cls.sent_request.close()
+		cls.sent_request.close_session()
 		do_log.info("\n{:=^40s}".format("新增患者功能用例执行结束"))
 
 	@data(*all_tests)
 	def test_add_patient(self,data_namedtuple):
 		do_log.info("\nrunning test method:{}".format(inspect.stack()[0][3]))
-		data = data_namedtuple.data
+		data = Context().add_patient_parameterization(data_namedtuple.data)
 		id = data_namedtuple.id
 		method = data_namedtuple.method
 		title = data_namedtuple.title

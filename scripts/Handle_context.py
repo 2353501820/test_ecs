@@ -9,19 +9,23 @@ from scripts.Handle_mysql_encapsulation import HandleMysql
 # from scripts.Do_config import do_config
 from scripts.constants import USER_ACCOUNT_FILE_PATH
 from scripts.Do_config import Handleconfig
+from faker import Faker
 # from cases.test_05_invest import LOAN_ID   # 导入模块的时候，如果有多次导入相同的模块，那么只有第一次导入有效
 do_config = Handleconfig(USER_ACCOUNT_FILE_PATH)
-
+fk = Faker(locale='zh_CN')
 class Context:
 	"""
 	实现参数化，反射功能
 	"""
+	invest_tel_config = do_config('invest_user','id')
 	not_existed_tel_pattern = re.compile(r"\$\{not_exited_tel\}")   # 创建一个正则表达式
 	invest_user_tel_pattern = re.compile(r"\$\{invest_user_tel\}")
 	recharge_user_pwd_pattern = re.compile(r"\$\{invest_user_pwd\}")
 	loan_id_pattern = re.compile(r"\$\{loan_id\}")
 	not_existed_loan_id_pattern = re.compile(r"\$\{not_existed_loan_id\}")
-	invest_tel_config = do_config('invest_user','id')
+	fullname_pattern = re.compile(r"\$\{fullname\}")
+
+
 
 	@classmethod
 	def not_existed_tel_replace(cls,data):
@@ -92,6 +96,26 @@ class Context:
 		return data
 
 	@classmethod
+	def fullname_replace(cls,data):
+		"""
+		患者姓名
+		:param data:
+		:return:
+		"""
+		if re.search(cls.fullname_pattern,data):
+			fullname = fk.name()
+			data = re.sub(cls.fullname_pattern,fullname,data)
+		return data
+
+
+
+
+
+
+
+
+
+	@classmethod
 	def register_parameterization(cls,data):
 		"""
 		实现注册功能的参数化
@@ -129,6 +153,11 @@ class Context:
 		return data
 		pass
 
+	@classmethod
+	def add_patient_parameterization(cls,data):
+		data = cls.fullname_replace(data)
+
+		return data
 
 
 if __name__ == '__main__':
