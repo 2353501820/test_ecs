@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35a2bf0-26d2-4826-8ec5-5a2b08abb8d7" name="Default Changelist" comment="测试用例上传">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test_ecs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test_ecs.iml" afterDir="false" />
+    <list default="true" id="e35a2bf0-26d2-4826-8ec5-5a2b08abb8d7" name="Default Changelist" comment="新增患者测试用例add_patient上传">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/test_06_add_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/test_06_add_patient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Handle_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Handle_context.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,8 @@
       <workItem from="1611666841223" duration="1575000" />
       <workItem from="1611670442333" duration="489000" />
       <workItem from="1611713016003" duration="2843000" />
-      <workItem from="1613802311783" duration="2421000" />
+      <workItem from="1613802311783" duration="3176000" />
+      <workItem from="1614222236664" duration="3471000" />
     </task>
     <task id="LOCAL-00001" summary="第一次项目上传">
       <created>1611670628377</created>
@@ -76,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611715030948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增患者测试用例add_patient上传">
+      <created>1613805880318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613805880319</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +103,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次项目上传" />
     <MESSAGE value="测试用例上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试用例上传" />
+    <MESSAGE value="新增患者测试用例add_patient上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增患者测试用例add_patient上传" />
   </component>
   <component name="WindowStateProjectService">
     <state x="558" y="94" key="CommitChangelistDialog2" timestamp="1611670624136">
@@ -108,13 +115,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611716863315" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611715040087">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613805883587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611715040087" />
-    <state x="753" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613802471954">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613805883587" />
+    <state x="753" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614222239619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613802471954" />
+    <state x="753" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614222239619" />
   </component>
 </project>
